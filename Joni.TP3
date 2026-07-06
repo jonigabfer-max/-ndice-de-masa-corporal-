@@ -11,19 +11,27 @@ int main() {
 
     imc = peso / (altura * altura);
 
-    printf("\nSu IMC es: %.2f\n", imc);
+    printf("\nSu IMC es: %.2f\n\n", imc);
+
+    printf("Tabla de condiciones:\n");
+    printf("Menor a 18.5       -> Bajo peso\n");
+    printf("18.5 a 24.9        -> Peso saludable\n");
+    printf("25.0 a 29.9        -> Sobrepeso\n");
+    printf("30.0 o mayor       -> Obesidad\n");
+
+    printf("\nUsted se encuentra en la condicion: ");
 
     if (imc < 18.5) {
-        printf("Categoria: Bajo peso\n");
+        printf("Bajo peso.\n");
     }
     else if (imc < 25.0) {
-        printf("Categoria: Peso saludable\n");
+        printf("Peso saludable.\n");
     }
     else if (imc < 30.0) {
-        printf("Categoria: Sobrepeso\n");
+        printf("Sobrepeso.\n");
     }
     else {
-        printf("Categoria: Obesidad\n");
+        printf("Obesidad.\n");
     }
 
     return 0;
